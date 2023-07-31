@@ -27,7 +27,7 @@ const callApi = async () => {
     const response = await fetch(url, { method: "GET" });
 
     const data = await response.json();
-    console.log(`${data[0].quote} - ${data[0].author}`);
+    console.log(`Frase: ${data[0].quote} - Autor: ${data[0].author}`);
 
   } catch (error) {
 
